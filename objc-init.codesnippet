@@ -3,28 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>objc-singleton</string>
+	<string>objc-init</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (instancetype)sharedInstance {
-    static &lt;#class#&gt; *_sharedInstance = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&amp;onceToken, ^{
-        _sharedInstance = &lt;#initializer#&gt;;
-    });
-    return _sharedInstance;
+	<string>- (instancetype)init {
+    self = [super init];
+    if (!self) {
+        return nil;
+    }
+    
+    &lt;#statements#&gt;
+    
+    return self;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>6F97C7E9-8DDB-4000-9C55-123C821440CB</string>
+	<string>FFE637AC-08C1-4C7F-A5F4-6804BB17739B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Singleton pattern for Objc</string>
+	<string>Init pattern for Objc</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Objc Singleton</string>
+	<string>Objc Init</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
