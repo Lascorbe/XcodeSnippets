@@ -3,22 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>swift-weak</string>
+	<string>objc-weakify</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeExpression</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[weak self] in
-            guard let strongSelf = self else { return }</string>
+	<string>__weak typeof(self)weakSelf = self;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>B5FFB5B9-1B62-49B5-B1E1-0749BBE07D42</string>
+	<string>1DACDA2C-9B89-4AFF-B726-D95C9C862596</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>weakify self in closure</string>
+	<string>Declare weak reference to self</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift weakify self</string>
+	<string>Objc __weak self</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

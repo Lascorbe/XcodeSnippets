@@ -13,14 +13,16 @@
 			    &lt;#code#&gt;
 			  })
 	}))
-  
+
 	presentViewController(alert, animated: true, completion: nil)</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>3141D76F-5123-4B60-8D39-8AD76BF37BF4</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Swift shortcut for UIAlertController</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>My Code Snippet</string>
+	<string>Swift UIAlertController</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

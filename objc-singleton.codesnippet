@@ -3,22 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>swift-weak</string>
+	<string>objc-singleton</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeExpression</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[weak self] in
-            guard let strongSelf = self else { return }</string>
+	<string>
+			+ (instancetype)sharedInstance {
+			    static <#class#> *_sharedInstance = nil;
+			    static dispatch_once_t onceToken;
+			    dispatch_once(&onceToken, ^{
+			        _sharedInstance = <#initializer#>;
+			    });
+			    return _sharedInstance;
+			}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>B5FFB5B9-1B62-49B5-B1E1-0749BBE07D42</string>
+	<string>D0964789-8FAA-4A94-3E5B-D5178137F102</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>weakify self in closure</string>
+	<string>Singleton pattern for Objc</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift weakify self</string>
+	<string>Objc Singleton</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
